@@ -1,0 +1,28 @@
+.root {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.img {
+  position: absolute;
+  left: -16px;
+  right: -16px;
+  top: -30px;
+  bottom: -42px;
+  background-image:/* webpackIgnore: true */ url('/assets/img.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-mask-image:/* webpackIgnore: true */ url('/assets/avatarOtherMainAvatar.svg');
+  mask-image:/* webpackIgnore: true */ url('/assets/avatarOtherMainAvatar.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: 16px 30px;
+  mask-position: 16px 30px;
+  -webkit-mask-size: 48px 48px;
+  mask-size: 48px 48px;
+}
