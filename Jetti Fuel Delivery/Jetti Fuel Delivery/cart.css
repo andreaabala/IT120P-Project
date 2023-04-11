@@ -1,0 +1,144 @@
+  body {
+		background-image: url('public/bgelements.png');
+		background-size: cover;
+		}
+.payment {
+	font-family: 'Nunito', sans-serif;
+	position: absolute;
+    top: 400px;
+    left: 500px;
+	font-size: 0.9em;
+}
+
+.payment-container {
+  position: absolute;
+  top: 500px;
+  left: 500px;
+  border-radius: var(--br-6xl);
+  background-color: #F3F3F3;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 480px;
+  height: 550px;
+}
+.order-container {
+  position: absolute;
+  bottom: 10px;
+  right: 350px;
+  border-radius: var(--br-6xl);
+  background-color: #F3F3F3;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 500px;
+  height: 350px;
+}
+
+.order-summary {
+	font-family: 'Nunito', sans-serif;
+	position: absolute;
+    top: 450px;
+    right: 700px;
+	font-size: 0.9em;
+}
+.total {
+	font-family: 'Nunito', sans-serif;
+	position: absolute;
+	bottom: 20px;
+	left: 30px;
+	font-size: 1.1em;
+	font-weight: 700;
+}
+	
+.visa {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  outline: none;
+  border: none;
+}
+
+.paypal {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  outline: none;
+  border: none;
+}
+img#paypal {
+	width: 100px;
+	height: 58px;
+}
+
+button .image-button {
+  border: none;
+  background: none;
+}
+
+.cardholder-name {
+  position: absolute;
+  top: 110px;
+  left: 35px;
+  width: 349px;
+  height: 55px;
+  font-family: 'Nunito', sans-serif;
+  color: #93939A;
+}
+
+.card-number {
+  position: absolute;
+  top: 180px;
+  left: 35px;
+  width: 349px;
+  height: 55px;
+  font-family: 'Nunito', sans-serif;
+  color: #93939A;
+}
+
+.date {
+  position: absolute;
+  top: 250px;
+  left: 35px;
+  width: 349px;
+  height: 55px;
+  font-family: 'Nunito', sans-serif;
+  color: #93939A;
+}
+
+.ccv {
+  position: absolute;
+  top: 320px;
+  left: 35px;
+  width: 349px;
+  height: 55px;
+  font-family: 'Nunito', sans-serif;
+  color: #93939A;
+}
+
+.confirm-button {
+	position: absolute;
+	bottom: 30px;
+	left: 160px;
+}
+
+button#confirm {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
+	width: 150px;
+	height: 35px;	
+	background-color: #FD6D22;
+	color: #fff;
+	border: none;
+	outline: none;
+}
+
+input[type=text], [type=date] {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 1px solid currentColor;
+    padding: calc(var(--size-bezel) * 1.5) var(--size-bezel);
+    color: #434343;
+    background-color: white;
+	outline: none;
+	border: none;
+    border-radius: var(--size-radius);
+	height: 35px;
+	

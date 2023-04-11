@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Jetti Petroleum Fuel Delivery</title>
+        <a href="index.html">
+		<div class="logo">
+            <img id="headerlogo" src="public/JettiLogo.png" alt="logo">
+            </a>
+			</div>
+        <div class="header">
+            <div class="header-right">
+              <a href="index.html">Products</a>
+              <a href="aboutus.html">About Us</a>
+              <a href="contact.html" class="active">Contact</a>
+              <a href="cart.html">My Orders</a>
+              <a id="user"> <span id="username"></span>
+                <button style="background-color: green; color: #fff;" id="logout">Logout</button></a>
+			  <a> <div class="nav-avatar">
+                  <img
+                    alt="maskI544"
+                    src="public/avatar.png"
+                  />
+            </div> </a>
+          </div>
+    </head>
+    <body id="contact">
+	<div>
+    <link href="stylesheet.css" rel="stylesheet" />
+    <div class="form-elements">
+        <div class="form-container"></div>
+        <div class="send-button">
+		  <button type="button">Send message</button>
+        </div>
+        <div class="message">
+          <i class="msg">Message</i><br>
+		  <input id="message" type="text" id="msg" name="msg">
+          <div class="msg-textfield"></div>
+        </div>
+        <div class="first-name">         
+		  <label for="fname">First name:</label> <br>
+		  <input type="text" id="fname" name="fname">
+        </div>
+        <div class="last-name">
+		  <label for="fname">Last name:</label> <br>
+          <input type="text" id="lname" name="lname">
+        </div>
+        <div class="email-address">
+          <label for="fname">Email Address:</label> <br>
+          <input type="text" id="email" name="email">
+        </div>
+        <div class="contact-number">
+          <label for="fname">Contact Number:</label> <br>
+          <input type="text" id="number" name="number">
+        </div>
+      </div>	  
+      <i class="we-would-love">We would love to hear from you!</i
+      ><b class="contact-us">Contact Us</b>
+	  <div class="office-details">
+        <div class="container"></div>
+        <div class="visit-us-jetti-business-container">
+          <p class="visit-us-jetti-business-center">
+            <span class="visit-us">Visit Us</span
+            ><br><span class="jetti-business-center"
+              >Jetti Business Center, Macapagal Boulevard, CBP1-A, Pasay City,
+              1308 Philippines</span
+            >
+          </p>
+        </div>
+        <div class="working-hours-monday-container">
+          <p class="visit-us-jetti-business-center">
+            <span class="visit-us">Working Hours</span
+            ><br><span class="jetti-business-center"
+              >Monday - Friday: 9AM to 6PM</span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="map-component">
+        <img class="map-img-icon" alt="" src="public/map.png">
+      </div>
+      <script>
+        const usernameElement = document.querySelector('#username');
+     const logoutButton = document.querySelector('#logout');
+     const userDiv = document.querySelector('#user')
+     const username = localStorage.getItem('username');
+     if (username) {
+       usernameElement.textContent = username;
+       logoutButton.style.display = 'flex';
+     } else {
+       logoutButton.style.display = 'none';
+       userDiv.style.display='none'
+     }
+     
+     logoutButton.addEventListener('click', () => {
+       localStorage.clear();
+       window.location.reload();
+     });
+         </script>
+    </body>
+</html>

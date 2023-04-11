@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Jetti Petroleum Fuel Delivery</title>
+        <a href="login.html">
+		<div class="logo">
+            <img id="headerlogo" src="public/JettiLogo.png" alt="logo">
+            </a>
+			</div>
+        <div class="header">
+            <div class="header-right">
+              <a href="index.html " class="active" >Products</a>
+              <a href="aboutus.html">About Us</a>
+              <a href="contact.html">Contact</a>
+              <a href="cart.html">My Orders</a>
+              <a id="user"> <span id="username"></span>
+              <button style="background-color: green; color: #fff;" id="logout">Logout</button></a>
+              <a>
+                <div class="nav-avatar">
+                  <img alt="maskI544" src="public/avatar.png" />
+                </div>
+              </a>
+         
+          </div>
+    </head>
+    <body>
+	<div class="deals">
+	<img class="deal-A" src="public/dealA.png" alt="deal">
+	<img class="deal-B" src="public/dealB.png" alt="deal">
+	</div>
+		<div class="products">
+		<div class="row">
+			<div class="column">
+				<div class="card">
+				<img src="public/P4.png" alt="fuel" style="width:100%">
+				<div class="container">
+                  <p class="list">Venom Rider 9000</p>
+                  <p class="price">Php 350</p>
+                  <p><button class="button">Add to Cart</button></p>
+                </div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card">
+				<img src="public/P5.png" alt="fuel" style="width:100%">
+                <div class="container">
+                  <p class="list">Venom Turbo X-Trem</p>
+                  <p class="price">Php 450</p>
+                  <p><button class="button">Add to Cart</button></p>
+                </div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card">
+				<img src="public/P6.png" alt="fuel" style="width:100%">
+                <div class="container">
+                  <p class="list">Venom Swift VS 11</p>
+                  <p class="price">Php 400</p>
+                  <p><button class="button">Add to Cart</button></p>
+                </div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card">
+				<img src="public/P7.png" alt="fuel" style="width:100%">
+                  <div class="container">
+                    <p class="list">Venom Turbo Boost</p>
+                    <p class="price">Php 1,500</p>
+                    <p><button class="button">Add to Cart</button></p>
+                  </div>
+				</div>
+			</div>
+		</div>
+		</div>
+    <script>
+   const usernameElement = document.querySelector('#username');
+const logoutButton = document.querySelector('#logout');
+const userDiv = document.querySelector('#user')
+const username = localStorage.getItem('username');
+if (username) {
+  usernameElement.textContent = username;
+  logoutButton.style.display = 'flex';
+} else {
+  logoutButton.style.display = 'none';
+  userDiv.style.display='none'
+}
+
+logoutButton.addEventListener('click', () => {
+  localStorage.clear();
+  window.location.reload();
+});
+    </script>
+    </body>
+</html>

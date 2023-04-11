@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>My first chart using FusionCharts Suite XT</title>
+<!-- Include fusioncharts core library -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+<!-- Include fusion theme -->
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+<script type="text/javascript">
+    //STEP 2 - Chart Data
+    const chartData = [{
+        "label": "Philippines",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }];
+
+    //STEP 3 - Chart Configurations
+    const chartConfig = {
+    type: 'column2d',
+    renderAt: 'chart-container',
+    width: '100%',
+    height: '400',
+    dataFormat: 'json',
+    dataSource: {
+        // Chart Configuration
+        "chart": {
+            "caption": "Oil Sales Reserves [2022-2023]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion",
+            },
+        // Chart Data
+        "data": chartData
+        }
+    };
+    FusionCharts.ready(function(){
+    var fusioncharts = new FusionCharts(chartConfig);
+    fusioncharts.render();
+    });
+
+</script>
+
+<style>
+.sidenav {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      padding-top: 20px;
+      z-index: 1;
+    }
+    
+    .sidenav a {
+      display: block;
+      color: #f2f2f2;
+      padding: 16px;
+      text-decoration: none;
+    }
+    
+    .sidenav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+.main {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+</style>
+</head>
+<body>
+    <div class="sidenav">
+        <a href="dashboard-admin.html">Dashboard</a>
+        <a href="admin.html">Orders</a>
+        <a href="costumer-admin.html">Customers</a>
+        <a href="product-admin.html">Products</a>
+        <a href="login.html">Logout</a>
+      </div>
+<div id="chart-container">FusionCharts XT will load here!</div>
+</body>
+</html>

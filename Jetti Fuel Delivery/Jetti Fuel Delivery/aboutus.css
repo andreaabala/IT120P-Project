@@ -1,0 +1,149 @@
+body#about {
+		background-image: url('public/bgelements.png');
+		background-size: cover;
+		}
+  .aboutus-our-company {
+    top: 165px;
+    left: 162px;
+    width: 448px;
+    height: 244px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .aboutus-text {
+    top: 55px;
+    color: rgba(43, 43, 67, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: center;
+    font-family: Nunito;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .aboutus-text15 {
+    left: 150px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 24px;
+    align-self: auto;
+    font-style: Bold;
+    text-align: left;
+    font-family: Nunito;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .aboutus-the-jetti-story {
+    top: 402px;
+    left: 81px;
+    width: 499px;
+    height: 276px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .aboutus-text17 {
+    top: 33px;
+    color: rgba(43, 43, 67, 1);
+    width: 499px;
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Nunito;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .aboutus-text36 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 24px;
+    align-self: auto;
+    font-style: Bold;
+    text-align: left;
+    font-family: Nunito;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .aboutus-our-mission {
+    top: 680px;
+    left: 249px;
+    width: 420px;
+    height: 228px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .aboutus-text38 {
+    left: 286px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 24px;
+    align-self: auto;
+    font-style: Bold;
+    text-align: left;
+    font-family: Nunito;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .aboutus-text40 {
+    top: 32px;
+    color: rgba(43, 43, 67, 1);
+    width: 420px;
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: right;
+    font-family: Nunito;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  
+  .aboutus-rectangle17 {
+    top: 121px;
+    right: 250px;
+    width: 693px;
+    height: 900px;
+    position: absolute;
+    border-color: transparent;
+  }
